@@ -7,4 +7,4 @@ BUILD_DIR=$1
 echo "-----> Creating process types"
 
 # Create the Procfile
-echo "web: $BUILD_DIR/agent-linux-amd64 -config.file=$BUILD_DIR/agent.yaml" > $BUILD_DIR/Procfile
+echo "web: $BUILD_DIR/grafana-agent-linux-amd64 -config.file=$BUILD_DIR/agent.yaml" > $BUILD_DIR/Procfile
