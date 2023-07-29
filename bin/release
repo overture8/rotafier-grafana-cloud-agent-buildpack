@@ -6,6 +6,8 @@ BUILD_DIR=$1
 
 echo "-----> Creating process types"
 
-echo "---"
-echo "default_process_types:"
-echo "  web: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml"
+cat << EOF
+---
+default_process_types:
+  web: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml
+EOF
