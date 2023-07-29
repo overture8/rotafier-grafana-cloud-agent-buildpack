@@ -1,13 +1,10 @@
 #!/bin/sh
 
 # $1 is the directory where the app is being built
-
 BUILD_DIR=$1
-
-echo "-----> Creating process types"
 
 cat << EOF
 ---
 default_process_types:
-  web: $BUILD_DIR/grafana-agent-linux-amd64
+  web: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml
 EOF
