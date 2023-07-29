@@ -6,5 +6,5 @@ BUILD_DIR=$1
 cat << EOF
 ---
 default_process_types:
-  agent: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml --debug.level=debug
+  agent: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml
 EOF
