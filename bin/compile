@@ -10,4 +10,4 @@ echo "-----> Installing Grafana Cloud Agent"
 
 # Download and extract the Grafana Cloud Agent to the build directory
 curl -L https://github.com/grafana/agent/releases/download/v0.35.2/grafana-agent-linux-amd64.zip -o $BUILD_DIR/agent.zip
-unzip $BUILD_DIR/agent.zip -d $BUILD_DIR
+unzip $BUILD_DIR/agent.zip -d $BUILD_DIR/bin
