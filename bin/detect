@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# $1 is the directory where the app is being built
+
+if [ -f $1/agent.yaml ]; then
+  echo "Grafana Cloud Agent"
+  exit 0
+else
+  echo "No agent.yaml file found"
+  exit 1
+fi

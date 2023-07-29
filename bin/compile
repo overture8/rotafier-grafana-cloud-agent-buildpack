@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# $1 is the directory where the app is being built
+# $2 is the directory for the build cache
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+echo "-----> Installing Grafana Cloud Agent"
+
+# Download and extract the Grafana Cloud Agent to the build directory
+curl -L https://github.com/grafana/agent/releases/latest/download/agent-linux-amd64.zip -o $BUILD_DIR/agent.zip
+unzip $BUILD_DIR/agent.zip -d $BUILD_DIR
