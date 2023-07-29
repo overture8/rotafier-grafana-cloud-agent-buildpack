@@ -9,5 +9,5 @@ echo "-----> Creating process types"
 cat << EOF
 ---
 default_process_types:
-  web: $BUILD_DIR/grafana-agent-linux-amd64 --config.file=$BUILD_DIR/agent.yaml
+  web: $BUILD_DIR/grafana-agent-linux-amd64
 EOF
